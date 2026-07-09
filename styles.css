@@ -61,12 +61,13 @@ nav {
   text-align: center;
 }
 
-.eyebrow,
-.chapter {
-  font-weight: 700;
-  color: var(--orange);
-  letter-spacing: 2px;
-  font-size: 1.1rem;
+.eyebrow {
+    font-weight: 700;
+    color: var(--orange);
+    letter-spacing: 2px;
+    font-size: 1.15rem;
+    margin-bottom: 1.25rem;
+}
 }
 }
 
