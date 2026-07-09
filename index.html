@@ -3,27 +3,29 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Elle, Ro & Co. | Children's Bookstore</title>
-
+  <title>Elle, Ro & Co. | Children’s Bookstore</title>
   <link rel="stylesheet" href="styles.css" />
 </head>
 
 <body>
   <header class="hero" id="home">
     <nav class="nav">
-      <a href="#home" class="brand">
+      <a href="#home">
         <img src="logo.png" alt="Elle, Ro & Co. logo" class="logo" />
       </a>
 
-      <div class="nav-links">
-        <a href="#about">About</a>
-        <a href="#books">Books</a>
-        <a href="#events">Events</a>
-        <a href="#visit">Visit</a>
+      <div class="bookshelf-nav">
+        <a href="#about" class="book book-blue"><span>About</span></a>
+        <a href="#books" class="book book-green"><span>Books</span></a>
+        <a href="#events" class="book book-yellow"><span>Events</span></a>
+        <a href="#visit" class="book book-pink"><span>Visit</span></a>
       </div>
     </nav>
 
-    <div class="hero-content">
+    <div class="hero-cloud cloud-one"></div>
+    <div class="hero-cloud cloud-two"></div>
+
+    <section class="hero-content">
       <p class="eyebrow">✦ Explore ✦ Imagine ✦ Read ✦</p>
 
       <h1>Inspiring a Lifetime of Reading,<br>One Story at a Time.</h1>
@@ -37,69 +39,89 @@
         <a href="#visit" class="btn primary">Plan Your Visit</a>
         <a href="#events" class="btn secondary">See Storytime</a>
       </div>
-    </div>
+
+      <div class="storybook-illustration">
+        <div class="open-book">
+          <div class="book-left"></div>
+          <div class="book-right"></div>
+          <div class="book-center"></div>
+        </div>
+        <span class="sparkle sparkle-one">✦</span>
+        <span class="sparkle sparkle-two">✦</span>
+        <span class="sparkle sparkle-three">✦</span>
+      </div>
+    </section>
   </header>
 
   <main>
     <section id="about" class="section about">
-      <p class="section-label">Welcome</p>
+      <p class="section-label">Welcome to the Story</p>
       <h2>A cozy little bookshop for curious kids and the grown-ups who love them.</h2>
       <p>
         Elle, Ro & Co. is being created as a place where children can explore,
-        imagine, and fall in love with reading. From first board books to favorite
-        bedtime stories, every shelf is chosen with wonder in mind.
+        imagine, and fall in love with reading. Every shelf is chosen with wonder,
+        warmth, and families in mind.
       </p>
     </section>
 
     <section id="books" class="section books">
-      <p class="section-label">What You'll Find</p>
+      <p class="section-label">Discover New Favorites</p>
       <h2>Books, gifts, and storytime treasures.</h2>
 
-      <div class="cards">
-        <article class="card blue-card">
-          <span class="card-icon">📖</span>
+      <div class="book-grid">
+        <article class="shelf-book blue">
+          <span>📖</span>
           <h3>Picture Books</h3>
-          <p>Beautiful, funny, sweet, and meaningful stories made for reading together.</p>
+          <p>Beautiful, funny, sweet stories made for reading together.</p>
         </article>
 
-        <article class="card green-card">
-          <span class="card-icon">🧸</span>
+        <article class="shelf-book green">
+          <span>🧸</span>
           <h3>Board Books</h3>
           <p>Sturdy little favorites for babies, toddlers, and tiny hands.</p>
         </article>
 
-        <article class="card yellow-card">
-          <span class="card-icon">⭐</span>
+        <article class="shelf-book yellow">
+          <span>⭐</span>
           <h3>Early Readers</h3>
           <p>Simple stories that help new readers build confidence and joy.</p>
         </article>
 
-        <article class="card teal-card">
-          <span class="card-icon">🎨</span>
+        <article class="shelf-book teal">
+          <span>🎨</span>
           <h3>Activity Books</h3>
-          <p>Coloring, creativity, learning, and screen-free fun for growing minds.</p>
+          <p>Coloring, creativity, learning, and screen-free fun.</p>
         </article>
 
-        <article class="card pink-card">
-          <span class="card-icon">🎁</span>
+        <article class="shelf-book pink">
+          <span>🎁</span>
           <h3>Gifts & Goodies</h3>
-          <p>Thoughtful little extras for birthdays, holidays, and just-because surprises.</p>
+          <p>Thoughtful little extras for birthdays and just-because surprises.</p>
         </article>
 
-        <article class="card orange-card">
-          <span class="card-icon">🌈</span>
+        <article class="shelf-book orange">
+          <span>🌈</span>
           <h3>Storytime Picks</h3>
-          <p>Read-aloud favorites perfect for classrooms, families, and cozy corners.</p>
+          <p>Read-aloud favorites for classrooms, families, and cozy corners.</p>
         </article>
       </div>
     </section>
 
+    <section class="section promise">
+      <p class="section-label">Our Promise</p>
+      <h2>Every child deserves stories that spark wonder.</h2>
+      <p>
+        Whether you're choosing your baby’s first board book or your child’s next
+        favorite read-aloud, we’re honored to be part of your family’s story.
+      </p>
+    </section>
+
     <section id="events" class="section events">
-      <p class="section-label">Gather Together</p>
+      <p class="section-label">Gather Around for Storytime</p>
       <h2>Storytime, crafts, and magical little memories.</h2>
       <p>
-        We’re dreaming up special moments for families — read-alouds, craft days,
-        seasonal celebrations, and events that make books feel even more magical.
+        We’re dreaming up read-alouds, craft days, seasonal celebrations, and
+        family events that make books feel even more magical.
       </p>
 
       <div class="event-box">
