@@ -327,43 +327,115 @@ h1 {
   font-size: 0.92rem;
   opacity: 0.75;
 }
+/* ==========================
+   Animations
+========================== */
+
+@keyframes fadeUp {
+  from {
+    opacity: 0;
+    transform: translateY(30px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+@keyframes fadeDown {
+  from {
+    opacity: 0;
+    transform: translateY(-25px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
 @keyframes twinkle {
   0%, 100% {
     transform: scale(1) rotate(0deg);
-    opacity: 0.25;
+    opacity: .25;
   }
   50% {
-    transform: scale(1.35) rotate(12deg);
-    opacity: 0.65;
-    .shooting-star {
-    position: absolute;
-
-    top: 14%;
-    left: -120px;
-
-    width: 90px;
-    height: 2px;
-
-    background: linear-gradient(
-        90deg,
-        rgba(255,255,255,0),
-        rgba(255,255,255,.95)
-    );
-
-    border-radius: 999px;
-
-    box-shadow:
-        0 0 12px rgba(255,255,255,.9);
-
-    transform: rotate(-18deg);
-
-    animation: shootingStar 22s linear infinite;
-
-    pointer-events: none;
-
-    z-index: 1;
+    transform: scale(1.3) rotate(12deg);
+    opacity: .7;
   }
 }
+
+@keyframes shootingStar {
+
+  0% {
+    transform: translate(-120px, -40px) rotate(-18deg);
+    opacity: 0;
+  }
+
+  2% {
+    opacity: 1;
+  }
+
+  7% {
+    transform: translate(1450px, 340px) rotate(-18deg);
+    opacity: 0;
+  }
+
+  100% {
+    transform: translate(1450px, 340px) rotate(-18deg);
+    opacity: 0;
+  }
+}
+
+/* ==========================
+   Shooting Star
+========================== */
+
+.shooting-star {
+  position: absolute;
+  top: 12%;
+  left: -120px;
+
+  width: 140px;
+  height: 2px;
+
+  background: linear-gradient(
+    to right,
+    rgba(255,255,255,0),
+    rgba(255,255,255,.95)
+  );
+
+  border-radius: 999px;
+
+  box-shadow:
+    0 0 10px rgba(255,255,255,.9);
+
+  transform: rotate(-18deg);
+
+  animation: shootingStar 22s linear infinite;
+
+  pointer-events: none;
+
+  z-index: 2;
+}
+
+.shooting-star::after {
+  content: "✦";
+  position: absolute;
+  right: -8px;
+  top: -13px;
+
+  font-size: 1.1rem;
+  color: #fff8c6;
+
+  text-shadow:
+    0 0 10px #fff,
+    0 0 18px #ffe89b;
+}
+
+/* ==========================
+   Mobile
+========================== */
+
 @media (max-width: 850px) {
   .nav {
     flex-direction: column;
