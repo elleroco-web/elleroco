@@ -21,7 +21,15 @@ body {
   margin: 0;
   font-family: 'Poppins', sans-serif;
   color: var(--ink);
-  background: var(--cream);
+  background:
+    radial-gradient(circle at 10% 8%, rgba(117,199,223,0.26), transparent 24%),
+    radial-gradient(circle at 90% 16%, rgba(155,216,165,0.24), transparent 25%),
+    radial-gradient(circle at 15% 42%, rgba(245,167,189,0.18), transparent 24%),
+    radial-gradient(circle at 88% 52%, rgba(246,214,107,0.22), transparent 26%),
+    radial-gradient(circle at 18% 82%, rgba(127,214,194,0.22), transparent 24%),
+    radial-gradient(circle at 85% 90%, rgba(244,163,93,0.16), transparent 24%),
+    var(--cream);
+  background-attachment: fixed;
 }
 
 h1, h2, h3 {
@@ -70,14 +78,14 @@ p { line-height: 1.75; }
   margin: 0 auto;
   display: flex;
   flex-direction: column;
-  align-items: center;
+  align-items: stretch;
 }
 
 .nav-links {
   display: flex;
-  gap: 36px;
-  justify-content: center;
-  margin-bottom: 38px;
+  gap: 28px;
+  justify-content: flex-start;
+  margin-bottom: 36px;
 }
 
 .nav-links a {
@@ -126,6 +134,7 @@ p { line-height: 1.75; }
         0 15px 40px rgba(0,0,0,.05);
 
     margin-bottom: 8px;
+  align-self: center;
 }
 .logo {
     width: 520px;
