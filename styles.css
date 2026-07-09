@@ -87,24 +87,25 @@ p { line-height: 1.75; }
 }
 
 .logo-card {
-  display: inline-block;
- background: rgba(255, 252, 247, 0.45);
-  backdrop-filter: blur(6px);
+    display: inline-block;
 
-  padding: 34px 58px;
+    background: rgba(255,252,247,.42);
+    backdrop-filter: blur(8px);
 
-  border-radius: 36px;
+    padding: 30px 80px;
 
-  border: 1px solid rgba(255,255,255,.45);
+    border-radius: 40px;
 
-  box-shadow:
-      0 18px 40px rgba(0,0,0,.05);
+    border: 1px solid rgba(255,255,255,.55);
 
-  margin-bottom: 28px;
+    box-shadow:
+        0 15px 40px rgba(0,0,0,.05);
+
+    margin-bottom: 8px;
 }
 .logo {
-    width: 430px;
-    max-width: 90vw;
+    width: 520px;
+    max-width: 92vw;
     display: block;
 }
 
@@ -123,7 +124,7 @@ p { line-height: 1.75; }
 }
 
 .hero-content {
-  max-width: 760px;
+  max-width: 990px;
   margin: 60px auto 0;
   text-align: center;
 }
