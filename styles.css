@@ -87,17 +87,22 @@ p { line-height: 1.75; }
 }
 
 .logo-card {
-  display: inline-block;
-  background: rgba(255,255,255,0.82);
-  padding: 28px 44px;
-  border-radius: 30px;
-  box-shadow: var(--shadow);
+    display: inline-block;
+    padding: 34px 54px;
+    background: #FFF8EF;
+    border-radius: 32px;
+
+    box-shadow:
+        0 18px 45px rgba(0,0,0,.07),
+        0 2px 0 rgba(255,255,255,.7) inset;
+
+    transition: .3s ease;
 }
 
 .logo {
-  width: 390px;
-  max-width: 85vw;
-  display: block;
+    width: 430px;
+    max-width: 90vw;
+    display: block;
 }
 
 .book:hover {
