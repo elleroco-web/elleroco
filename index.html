@@ -3,14 +3,18 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Elle, Ro & Co.</title>
+  <title>Elle, Ro & Co. | Children's Bookstore</title>
+
   <link rel="stylesheet" href="styles.css" />
 </head>
 
 <body>
-  <header class="hero">
-    <nav>
-      <img src="logo.png" alt="Elle, Ro & Co. logo" class="logo" />
+  <header class="hero" id="home">
+    <nav class="nav">
+      <a href="#home" class="brand">
+        <img src="logo.png" alt="Elle, Ro & Co. logo" class="logo" />
+      </a>
+
       <div class="nav-links">
         <a href="#about">About</a>
         <a href="#books">Books</a>
@@ -20,81 +24,118 @@
     </nav>
 
     <div class="hero-content">
-     <p class="eyebrow">✦ Explore ✦ Imagine ✦ Read ✦</p>
-      <h1>Where little imaginations become lifelong adventures.</h1>
+      <p class="eyebrow">✦ Explore ✦ Imagine ✦ Read ✦</p>
+
       <h1>Inspiring a Lifetime of Reading,<br>One Story at a Time.</h1>
 
-<p class="hero-text">
-From picture books to chapter books, every shelf is filled with opportunities to discover, dream, and grow together.
-</p>
+      <p class="hero-text">
+        A whimsical children’s bookstore filled with picture books, board books,
+        read-aloud favorites, gifts, and cozy moments for little readers.
+      </p>
+
       <div class="buttons">
-        <a href="#visit" class="btn primary">Visit Us</a>
-        <a href="#events" class="btn secondary">Storytime Events</a>
+        <a href="#visit" class="btn primary">Plan Your Visit</a>
+        <a href="#events" class="btn secondary">See Storytime</a>
       </div>
-      <div class="storybook-book">
-  <div class="book-cover"></div>
-  <div class="book-page page-one"></div>
-  <div class="book-page page-two"></div>
-  <div class="book-spine"></div>
-  <span class="book-star star-one">✦</span>
-  <span class="book-star star-two">✦</span>
-  <span class="book-star star-three">✦</span>
-</div>
     </div>
   </header>
 
-  <section id="about" class="section about">
-    <p class="chapter">Chapter One</p>
-    <h2>Welcome to Elle, Ro & Co.</h2>
-    <p>
-      We believe the right book can spark wonder, grow confidence, and turn ordinary days into adventures.
-      Our shop is designed for children and families to slow down, explore, and fall in love with reading.
-    </p>
-  </section>
+  <main>
+    <section id="about" class="section about">
+      <p class="section-label">Welcome</p>
+      <h2>A cozy little bookshop for curious kids and the grown-ups who love them.</h2>
+      <p>
+        Elle, Ro & Co. is being created as a place where children can explore,
+        imagine, and fall in love with reading. From first board books to favorite
+        bedtime stories, every shelf is chosen with wonder in mind.
+      </p>
+    </section>
 
-  <section id="books" class="section">
-    <p class="chapter">Discover New Adventures</p>
-    <h2>Find your next favorite story.</h2>
+    <section id="books" class="section books">
+      <p class="section-label">What You'll Find</p>
+      <h2>Books, gifts, and storytime treasures.</h2>
 
-    <div class="cards">
-      <div class="card pink">
-        <h3>Picture Books</h3>
-        <p>Sweet, silly, beautiful stories for little readers.</p>
+      <div class="cards">
+        <article class="card blue-card">
+          <span class="card-icon">📖</span>
+          <h3>Picture Books</h3>
+          <p>Beautiful, funny, sweet, and meaningful stories made for reading together.</p>
+        </article>
+
+        <article class="card green-card">
+          <span class="card-icon">🧸</span>
+          <h3>Board Books</h3>
+          <p>Sturdy little favorites for babies, toddlers, and tiny hands.</p>
+        </article>
+
+        <article class="card yellow-card">
+          <span class="card-icon">⭐</span>
+          <h3>Early Readers</h3>
+          <p>Simple stories that help new readers build confidence and joy.</p>
+        </article>
+
+        <article class="card teal-card">
+          <span class="card-icon">🎨</span>
+          <h3>Activity Books</h3>
+          <p>Coloring, creativity, learning, and screen-free fun for growing minds.</p>
+        </article>
+
+        <article class="card pink-card">
+          <span class="card-icon">🎁</span>
+          <h3>Gifts & Goodies</h3>
+          <p>Thoughtful little extras for birthdays, holidays, and just-because surprises.</p>
+        </article>
+
+        <article class="card orange-card">
+          <span class="card-icon">🌈</span>
+          <h3>Storytime Picks</h3>
+          <p>Read-aloud favorites perfect for classrooms, families, and cozy corners.</p>
+        </article>
       </div>
-      <div class="card yellow">
-        <h3>Early Readers</h3>
-        <p>Books that help new readers grow with confidence.</p>
-      </div>
-      <div class="card blue">
-        <h3>Chapter Books</h3>
-        <p>Adventures for kids ready for bigger stories.</p>
-      </div>
-      <div class="card green">
-        <h3>Gifts & Toys</h3>
-        <p>Thoughtful treasures for birthdays, holidays, and just because.</p>
-      </div>
-    </div>
-  </section>
+    </section>
 
-  <section id="events" class="section events">
-    <p class="chapter">Make Magical Memories</p>
-    <h2>Storytime, crafts, and cozy community.</h2>
-    <p>
-      Join us for read-alouds, creative activities, seasonal events, and special moments made for families.
-    </p>
-  </section>
+    <section id="events" class="section events">
+      <p class="section-label">Gather Together</p>
+      <h2>Storytime, crafts, and magical little memories.</h2>
+      <p>
+        We’re dreaming up special moments for families — read-alouds, craft days,
+        seasonal celebrations, and events that make books feel even more magical.
+      </p>
 
-  <section id="visit" class="section visit">
-    <p class="chapter">Plan Your Visit</p>
-    <h2>Come say hello.</h2>
-    <p><strong>Location:</strong> Coming soon</p>
-    <p><strong>Hours:</strong> Coming soon</p>
-    <p><strong>Website:</strong> elleroco.com</p>
-  </section>
+      <div class="event-box">
+        <h3>Coming Soon</h3>
+        <p>Storytime dates, opening events, and family activities will be announced soon.</p>
+      </div>
+    </section>
 
-  <footer>
+    <section id="visit" class="section visit">
+      <p class="section-label">Plan Your Visit</p>
+      <h2>Come explore with us.</h2>
+
+      <div class="visit-grid">
+        <div>
+          <h3>Location</h3>
+          <p>Coming soon</p>
+        </div>
+
+        <div>
+          <h3>Hours</h3>
+          <p>Coming soon</p>
+        </div>
+
+        <div>
+          <h3>Online</h3>
+          <p>elleroco.com</p>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="footer">
     <img src="logo.png" alt="Elle, Ro & Co. logo" class="footer-logo" />
-    <p>© 2026 Elle, Ro & Co. • explore • imagine • read</p>
+    <h2>Every great adventure begins with a story.</h2>
+    <p>We’d love to be part of yours.</p>
+    <p class="copyright">© 2026 Elle, Ro & Co. • Explore ✦ Imagine ✦ Read</p>
   </footer>
 
   <script src="script.js"></script>
