@@ -335,6 +335,33 @@ h1 {
   50% {
     transform: scale(1.35) rotate(12deg);
     opacity: 0.65;
+    .shooting-star {
+    position: absolute;
+
+    top: 14%;
+    left: -120px;
+
+    width: 90px;
+    height: 2px;
+
+    background: linear-gradient(
+        90deg,
+        rgba(255,255,255,0),
+        rgba(255,255,255,.95)
+    );
+
+    border-radius: 999px;
+
+    box-shadow:
+        0 0 12px rgba(255,255,255,.9);
+
+    transform: rotate(-18deg);
+
+    animation: shootingStar 22s linear infinite;
+
+    pointer-events: none;
+
+    z-index: 1;
   }
 }
 @media (max-width: 850px) {
