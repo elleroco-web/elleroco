@@ -118,11 +118,13 @@ p {
 .location-link {
   color: inherit;
   text-decoration: none;
-  transition: 0.2s ease;
+  transition: all .25s ease;
+  display: inline-block;
 }
 
 .location-link:hover {
   color: var(--blue);
+  transform: translateY(-2px);
 }
 
 /* LOGO */
