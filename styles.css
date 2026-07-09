@@ -301,14 +301,15 @@ h1 {
     gap: 22px;
   }
 
-  .logo {
-    width: 210px;
-  }
+.logo {
+  width: 300px;
+}
 
-  .bookshelf-nav {
+    .nav-links {
     flex-wrap: wrap;
     justify-content: center;
-    border-radius: 28px;
+    gap: 18px;
+    margin-bottom: 30px;
   }
 
   .hero-content {
