@@ -35,12 +35,36 @@ p { line-height: 1.75; }
 .hero {
   min-height: 100vh;
   padding: 34px 28px 90px;
+  position: relative;
+  overflow: hidden;
   background:
-    radial-gradient(circle at 16% 18%, rgba(117,199,223,0.16), transparent 25%),
-    radial-gradient(circle at 82% 20%, rgba(155,216,165,0.14), transparent 26%),
+    radial-gradient(circle at 12% 18%, rgba(117,199,223,0.24), transparent 24%),
+    radial-gradient(circle at 88% 20%, rgba(155,216,165,0.22), transparent 26%),
+    radial-gradient(circle at 18% 78%, rgba(245,167,189,0.16), transparent 24%),
+    radial-gradient(circle at 82% 78%, rgba(246,214,107,0.18), transparent 26%),
     var(--cream);
 }
+.hero::before,
+.hero::after {
+  content: "✦";
+  position: absolute;
+  font-size: 3.2rem;
+  opacity: 0.35;
+  animation: twinkle 3s infinite ease-in-out;
+}
 
+.hero::before {
+  top: 24%;
+  left: 9%;
+  color: var(--blue);
+}
+
+.hero::after {
+  bottom: 22%;
+  right: 10%;
+  color: var(--green);
+  animation-delay: 1.2s;
+}
 .nav {
   max-width: 1160px;
   margin: 0 auto;
@@ -303,7 +327,16 @@ h1 {
   font-size: 0.92rem;
   opacity: 0.75;
 }
-
+@keyframes twinkle {
+  0%, 100% {
+    transform: scale(1) rotate(0deg);
+    opacity: 0.25;
+  }
+  50% {
+    transform: scale(1.35) rotate(12deg);
+    opacity: 0.65;
+  }
+}
 @media (max-width: 850px) {
   .nav {
     flex-direction: column;
