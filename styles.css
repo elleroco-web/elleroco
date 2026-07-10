@@ -496,51 +496,56 @@ h1 {
 }
 
 .sponsor-header {
-  padding: 28px 28px 10px;
+  width: 100%;
+  padding: 34px 40px 20px;
   position: relative;
   z-index: 1;
 }
 
 .sponsor-header .nav {
-  align-items: flex-start;
+  max-width: 1160px;
+  margin: 0 auto;
 }
 
 .sponsor-header .nav-links {
-  margin-bottom: 0;
+  margin: 0;
 }
 
 .sponsor-main {
-  width: min(900px, calc(100% - 48px));
+  width: calc(100% - 48px);
+  max-width: 900px;
   margin: 0 auto;
-  padding: 34px 0 80px;
+  padding: 70px 0 90px;
   position: relative;
   z-index: 1;
 }
 
 .sponsor-intro {
-  max-width: 720px;
-  margin: 0 auto 34px;
+  max-width: 760px;
+  margin: 0 auto 42px;
+  padding: 0 18px;
   text-align: center;
 }
 
 .sponsor-intro .section-label {
-  margin-bottom: 12px;
+  margin-bottom: 18px;
 }
 
 .sponsor-intro h1 {
-  margin-bottom: 18px;
-  font-size: clamp(3.2rem, 7vw, 5.4rem);
+  margin-bottom: 24px;
+  font-size: clamp(3.2rem, 6vw, 5.3rem);
+  line-height: 1.05;
 }
 
 .sponsor-intro p:not(.section-label) {
-  max-width: 650px;
-  margin: 8px auto 0;
+  max-width: 680px;
+  margin: 12px auto 0;
   font-size: 1.05rem;
 }
 
 .sponsor-form-card {
   width: 100%;
-  padding: 44px 50px;
+  padding: 48px 50px;
   background: rgba(255, 255, 255, 0.88);
   border-top: 10px solid var(--green);
   border-radius: 36px;
