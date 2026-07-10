@@ -497,6 +497,7 @@ h1 {
   body {
     width: 100%;
     max-width: 100%;
+    margin: 0;
     overflow-x: hidden;
   }
 
@@ -504,11 +505,34 @@ h1 {
     background-attachment: scroll;
   }
 
-  /* HERO */
+  .hero,
+  .nav,
+  .nav-links,
+  .logo-card,
+  .hero-content,
+  .section,
+  .about,
+  .promise,
+  .events,
+  .visit,
+  .book-grid,
+  .shelf-book,
+  .event-box,
+  .visit-grid,
+  .visit-grid div,
+  .footer {
+    box-sizing: border-box;
+  }
+
+  /* ==========================
+     HERO
+  ========================== */
 
   .hero {
+    width: 100%;
     min-height: auto;
     padding: 18px 0 64px;
+    overflow: hidden;
   }
 
   .hero::before {
@@ -518,17 +542,20 @@ h1 {
   }
 
   .hero::after {
-    bottom: 10%;
     right: 5%;
+    bottom: 10%;
     font-size: 2rem;
   }
 
-  /* NAVIGATION */
+  /* ==========================
+     NAVIGATION
+  ========================== */
 
   .nav {
     width: 100%;
     max-width: none;
     margin: 0;
+    padding: 0;
   }
 
   .nav-links {
@@ -572,11 +599,12 @@ h1 {
     transform: translateY(-2px);
   }
 
-  /* LOGO */
+  /* ==========================
+     LOGO
+  ========================== */
 
   .logo-card {
-    align-self: center;
-    width: calc(100% - 38px);
+    width: calc(100% - 36px);
     max-width: 430px;
     margin: 0 auto;
     padding: 15px 18px;
@@ -585,18 +613,22 @@ h1 {
   }
 
   .logo {
+    display: block;
     width: 100%;
     max-width: 350px;
     height: auto;
     margin: 0 auto;
   }
 
-  /* HERO TEXT */
+  /* ==========================
+     HERO TEXT
+  ========================== */
 
   .hero-content {
-    width: calc(100% - 38px);
+    width: calc(100% - 36px);
     max-width: 600px;
     margin: 27px auto 0;
+    padding: 0;
   }
 
   h1 {
@@ -605,6 +637,7 @@ h1 {
   }
 
   .hero-text {
+    width: 100%;
     max-width: 500px;
     margin: 21px auto 0;
     font-size: 0.98rem;
@@ -612,6 +645,7 @@ h1 {
   }
 
   .buttons {
+    width: 100%;
     flex-direction: column;
     align-items: center;
     gap: 12px;
@@ -623,16 +657,19 @@ h1 {
     max-width: 275px;
     padding: 14px 20px;
     text-align: center;
+    box-sizing: border-box;
   }
 
-  /* HOMEPAGE SECTIONS */
+  /* ==========================
+     HOMEPAGE SECTIONS
+  ========================== */
 
   .section {
-    width: calc(100% - 34px);
+    width: calc(100% - 32px);
     max-width: 650px;
     margin-left: auto;
     margin-right: auto;
-    padding: 62px 22px;
+    padding: 58px 20px;
   }
 
   .section-label {
@@ -658,15 +695,18 @@ h1 {
   .promise,
   .events,
   .visit {
-    width: calc(100% - 34px);
+    width: calc(100% - 32px);
     max-width: 650px;
-    margin-top: 28px;
+    margin: 28px auto 0;
     border-radius: 28px;
   }
 
-  /* BOOK CARDS */
+  /* ==========================
+     BOOK CARDS
+  ========================== */
 
   .book-grid {
+    width: 100%;
     grid-template-columns: 1fr;
     gap: 17px;
     margin-top: 34px;
@@ -696,7 +736,9 @@ h1 {
     font-size: 0.94rem;
   }
 
-  /* STORYTIME */
+  /* ==========================
+     STORYTIME
+  ========================== */
 
   .event-box {
     width: 100%;
@@ -706,9 +748,12 @@ h1 {
     border-radius: 24px;
   }
 
-  /* VISIT */
+  /* ==========================
+     VISIT
+  ========================== */
 
   .visit-grid {
+    width: 100%;
     grid-template-columns: 1fr;
     gap: 16px;
     margin-top: 32px;
@@ -728,18 +773,22 @@ h1 {
 
   .location-link {
     margin: 3px 0;
+    overflow-wrap: anywhere;
   }
 
-  /* FOOTER */
+  /* ==========================
+     FOOTER
+  ========================== */
 
   .footer {
-    width: calc(100% - 30px);
+    width: 100%;
     margin: 0 auto;
-    padding: 65px 15px 48px;
+    padding: 65px 18px 48px;
   }
 
   .footer-logo {
     width: 135px;
+    max-width: 100%;
     margin-bottom: 18px;
   }
 
@@ -761,7 +810,9 @@ h1 {
     line-height: 1.6;
   }
 
-  /* SPARKLES */
+  /* ==========================
+     SPARKLES
+  ========================== */
 
   .shooting-star {
     display: none;
