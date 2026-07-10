@@ -1,0 +1,218 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+  <title>Sponsor a Bookshelf | Elle, Ro & Co.</title>
+
+  <link rel="icon" type="image/png" href="favicon.png" />
+  <link rel="shortcut icon" type="image/png" href="favicon.png" />
+  <link rel="stylesheet" href="styles.css" />
+</head>
+
+<body class="sponsor-page">
+  <div class="page-sparkles" aria-hidden="true">
+    <span class="page-sparkle s1">✦</span>
+    <span class="page-sparkle s2">✦</span>
+    <span class="page-sparkle s3">✦</span>
+    <span class="page-sparkle s4">✦</span>
+    <span class="page-sparkle s5">✦</span>
+    <span class="page-sparkle s6">✦</span>
+    <span class="page-sparkle s7">✦</span>
+    <span class="page-sparkle s8">✦</span>
+  </div>
+
+  <header class="sponsor-header">
+    <nav class="nav">
+      <div class="nav-links">
+        <a href="index.html">Home</a>
+        <a href="index.html#about">About</a>
+        <a href="index.html#books">Books</a>
+        <a href="index.html#events">Storytime</a>
+        <a href="index.html#visit">Visit</a>
+      </div>
+
+      <a href="index.html" class="logo-card">
+        <img
+          src="logo.png"
+          alt="Elle, Ro & Co. logo"
+          class="logo"
+        />
+      </a>
+    </nav>
+  </header>
+
+  <main class="sponsor-main">
+    <section class="sponsor-intro">
+      <p class="section-label">Become Part of Our Story</p>
+
+      <h1>Sponsor a Bookshelf</h1>
+
+      <p>
+        Celebrate a special little reader by sponsoring a bookshelf in their
+        name for just <strong>$25</strong>.
+      </p>
+
+      <p>
+        Complete the form below, and we’ll follow up with payment details and
+        confirmation of how the name will appear.
+      </p>
+    </section>
+
+    <section class="sponsor-form-card">
+      <form
+        action="https://formspree.io/f/mlgyqdkq"
+        method="POST"
+        class="sponsor-form"
+      >
+        <div class="form-row">
+          <div class="form-field">
+            <label for="guardian-name">Parent or Guardian Name</label>
+            <input
+              type="text"
+              id="guardian-name"
+              name="Parent or Guardian Name"
+              autocomplete="name"
+              required
+            />
+          </div>
+
+          <div class="form-field">
+            <label for="email">Email Address</label>
+            <input
+              type="email"
+              id="email"
+              name="email"
+              autocomplete="email"
+              required
+            />
+          </div>
+        </div>
+
+        <div class="form-row">
+          <div class="form-field">
+            <label for="phone">Phone Number</label>
+            <input
+              type="tel"
+              id="phone"
+              name="Phone Number"
+              autocomplete="tel"
+            />
+          </div>
+
+          <div class="form-field">
+            <label for="child-name">Child’s Name</label>
+            <input
+              type="text"
+              id="child-name"
+              name="Child's Name"
+              required
+            />
+          </div>
+        </div>
+
+        <div class="form-field">
+          <label for="display-name">
+            How should the child’s name appear?
+          </label>
+
+          <select id="display-name" name="Name Display Preference" required>
+            <option value="" disabled selected>Choose one</option>
+            <option value="First name only">First name only</option>
+            <option value="First and last name">First and last name</option>
+            <option value="First name and last initial">
+              First name and last initial
+            </option>
+          </select>
+        </div>
+
+        <fieldset class="form-field">
+          <legend>Is this sponsorship a gift?</legend>
+
+          <div class="choice-row">
+            <label class="choice-option">
+              <input type="radio" name="Is This a Gift?" value="Yes" required />
+              <span>Yes</span>
+            </label>
+
+            <label class="choice-option">
+              <input type="radio" name="Is This a Gift?" value="No" required />
+              <span>No</span>
+            </label>
+          </div>
+        </fieldset>
+
+        <div class="form-field">
+          <label for="dedication">Optional Dedication or Note</label>
+          <textarea
+            id="dedication"
+            name="Dedication or Note"
+            rows="5"
+            placeholder="For example: In honor of..., Happy Birthday..., or a short message."
+          ></textarea>
+        </div>
+
+        <div class="form-field">
+          <label for="payment">Preferred Payment Method</label>
+
+          <select id="payment" name="Preferred Payment Method" required>
+            <option value="" disabled selected>Choose one</option>
+            <option value="Online payment">Online payment</option>
+            <option value="Cash in store">Cash in store</option>
+            <option value="Check">Check</option>
+            <option value="Please contact me">Please contact me</option>
+          </select>
+        </div>
+
+        <label class="agreement">
+          <input
+            type="checkbox"
+            name="Agrees to $25 Sponsorship"
+            value="Yes"
+            required
+          />
+
+          <span>
+            I understand that sponsoring a bookshelf costs
+            <strong>$25</strong>.
+          </span>
+        </label>
+
+        <input
+          type="hidden"
+          name="_subject"
+          value="New Elle, Ro & Co. Bookshelf Sponsorship"
+        />
+
+        <button type="submit" class="btn primary sponsor-submit">
+          Submit Sponsorship
+        </button>
+
+        <p class="form-note">
+          Submitting this form does not process payment. We’ll contact you with
+          the next steps.
+        </p>
+      </form>
+    </section>
+  </main>
+
+  <footer class="footer">
+    <img
+      src="logo.png"
+      alt="Elle, Ro & Co. logo"
+      class="footer-logo"
+    />
+
+    <h2>Thank you for becoming part of our story.</h2>
+
+    <p class="signature-line">
+      We can't wait to celebrate your little reader.
+    </p>
+
+    <p class="copyright">
+      © 2026 Elle, Ro &amp; Co. • Explore ✦ Imagine ✦ Read
+    </p>
+  </footer>
+</body>
+</html>
