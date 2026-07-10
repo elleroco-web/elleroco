@@ -496,23 +496,17 @@ h1 {
 }
 
 .sponsor-header {
-  padding: 28px 28px 0;
+  padding: 28px 28px 10px;
   position: relative;
   z-index: 1;
 }
 
+.sponsor-header .nav {
+  align-items: flex-start;
+}
+
 .sponsor-header .nav-links {
-  margin-bottom: 18px;
-}
-
-.sponsor-header .logo-card {
-  padding: 18px 48px;
   margin-bottom: 0;
-}
-
-.sponsor-header .logo {
-  width: 400px;
-  max-width: 80vw;
 }
 
 .sponsor-main {
