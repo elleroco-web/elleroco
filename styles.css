@@ -769,5 +769,43 @@ h1 {
   .shooting-star {
     display: none;
   }
+    .sponsor-header {
+  padding: 22px 16px 10px;
+}
+
+.sponsor-main {
+  width: calc(100% - 30px);
+  padding: 35px 0 70px;
+}
+
+.sponsor-intro {
+  margin-bottom: 30px;
+}
+
+.sponsor-intro h1 {
+  font-size: clamp(2.5rem, 12vw, 4rem);
+}
+
+.sponsor-form-card {
+  padding: 30px 20px;
+  border-radius: 28px;
+}
+
+.form-row {
+  grid-template-columns: 1fr;
+  gap: 26px;
+}
+
+.choice-row {
+  flex-direction: column;
+}
+
+.choice-option {
+  width: 100%;
+}
+
+.sponsor-submit {
+  width: 100%;
+  min-width: 0;
 }
 }
