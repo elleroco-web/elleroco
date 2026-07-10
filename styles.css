@@ -481,17 +481,13 @@ h1 {
     transform: scale(1.25) rotate(12deg);
   }
     
-}
-header,
-main,
-footer {
+.hero,
+.section,
+.footer {
     position: relative;
     z-index: 1;
 }
 
-/* MOBILE */
-
-@media (max-width: 850px) {
 /* MOBILE */
 
 @media (max-width: 850px) {
