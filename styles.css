@@ -480,8 +480,18 @@ h1 {
     opacity: 0.65;
     transform: scale(1.25) rotate(12deg);
   }
+    
+}
+header,
+main,
+footer {
+    position: relative;
+    z-index: 1;
 }
 
+/* MOBILE */
+
+@media (max-width: 850px) {
 /* MOBILE */
 
 @media (max-width: 850px) {
