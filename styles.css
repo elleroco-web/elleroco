@@ -946,25 +946,13 @@ h1 {
      SPONSOR PAGE MOBILE
   ========================== */
 
-  .sponsor-header {
-    width: 100%;
-    padding: 18px 0 0;
-  }
+.sponsor-header {
+  padding: 18px 0 6px;
+}
 
-  .sponsor-header .nav-links {
-    margin-bottom: 18px;
-  }
-
-  .sponsor-header .logo-card {
-    width: calc(100% - 38px);
-    max-width: 430px;
-    padding: 14px 18px;
-  }
-
-  .sponsor-header .logo {
-    width: 100%;
-    max-width: 330px;
-  }
+.sponsor-header .nav-links {
+  margin-bottom: 0;
+}
 
   .sponsor-main {
     width: calc(100% - 30px);
