@@ -8,10 +8,327 @@
 
   <link rel="icon" type="image/png" href="favicon.png" />
   <link rel="shortcut icon" type="image/png" href="favicon.png" />
+
+  <!-- Keep your main website stylesheet for fonts, colors, buttons, etc. -->
   <link rel="stylesheet" href="styles.css" />
+
+  <style>
+    /* =========================================
+       SPONSOR PAGE RESET
+    ========================================= */
+
+    .sponsor-page-new,
+    .sponsor-page-new * {
+      box-sizing: border-box;
+    }
+
+    .sponsor-page-new {
+      min-height: 100vh;
+      margin: 0;
+      overflow-x: hidden;
+    }
+
+    /* =========================================
+       HEADER
+    ========================================= */
+
+    .sponsor-new-header {
+      width: 100%;
+      padding: 28px 24px 12px;
+      position: relative;
+      z-index: 2;
+    }
+
+    .sponsor-new-nav {
+      width: 100%;
+      max-width: 1160px;
+      margin: 0 auto;
+    }
+
+    .sponsor-new-nav-links {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      gap: 28px;
+      flex-wrap: wrap;
+    }
+
+    .sponsor-new-nav-links a {
+      text-decoration: none;
+      color: var(--ink, #2f2f2f);
+      font-family: 'Quicksand', sans-serif;
+      font-weight: 700;
+    }
+
+    /* =========================================
+       MAIN PAGE WRAPPER
+    ========================================= */
+
+    .sponsor-new-main {
+      width: 100%;
+      padding: 55px 24px 80px;
+      position: relative;
+      z-index: 1;
+    }
+
+    .sponsor-new-container {
+      width: 100%;
+      max-width: 900px;
+      margin: 0 auto;
+    }
+
+    /* =========================================
+       INTRO
+    ========================================= */
+
+    .sponsor-new-intro {
+      width: 100%;
+      max-width: 760px;
+      margin: 0 auto 38px;
+      text-align: center;
+    }
+
+    .sponsor-new-label {
+      margin: 0 0 14px;
+      font-family: 'Quicksand', sans-serif;
+      font-weight: 700;
+      letter-spacing: 0.08em;
+      text-transform: uppercase;
+    }
+
+    .sponsor-new-title {
+      margin: 0 0 22px;
+      font-size: clamp(2.8rem, 7vw, 5rem);
+      line-height: 1.05;
+    }
+
+    .sponsor-new-intro-text {
+      max-width: 680px;
+      margin: 10px auto 0;
+      font-size: 1.05rem;
+      line-height: 1.7;
+    }
+
+    /* =========================================
+       FORM CARD
+    ========================================= */
+
+    .sponsor-new-card {
+      width: 100%;
+      padding: 46px;
+      background: rgba(255, 255, 255, 0.92);
+      border-top: 10px solid var(--green, #9bd8a5);
+      border-radius: 32px;
+      box-shadow: var(--shadow, 0 18px 45px rgba(0, 0, 0, 0.1));
+      backdrop-filter: blur(8px);
+    }
+
+    .sponsor-new-form {
+      width: 100%;
+      display: grid;
+      gap: 24px;
+    }
+
+    .sponsor-new-row {
+      display: grid;
+      grid-template-columns: repeat(2, minmax(0, 1fr));
+      gap: 22px;
+    }
+
+    .sponsor-new-field {
+      display: grid;
+      gap: 9px;
+      min-width: 0;
+      margin: 0;
+      padding: 0;
+      border: 0;
+    }
+
+    .sponsor-new-field label,
+    .sponsor-new-field legend {
+      font-family: 'Quicksand', sans-serif;
+      font-size: 1rem;
+      font-weight: 700;
+      color: var(--ink, #2f2f2f);
+    }
+
+    .sponsor-new-field input,
+    .sponsor-new-field select {
+      display: block;
+      width: 100%;
+      min-width: 0;
+      min-height: 52px;
+      margin: 0;
+      padding: 14px 16px;
+      border: 2px solid rgba(117, 199, 223, 0.35);
+      border-radius: 16px;
+      background: rgba(255, 255, 255, 0.96);
+      color: var(--ink, #2f2f2f);
+      font: inherit;
+      outline: none;
+    }
+
+    .sponsor-new-field input:focus,
+    .sponsor-new-field select:focus {
+      border-color: var(--blue, #75c7df);
+      box-shadow: 0 0 0 4px rgba(117, 199, 223, 0.16);
+    }
+
+    /* =========================================
+       CHOICES
+    ========================================= */
+
+    .sponsor-new-choice-row {
+      display: flex;
+      gap: 12px;
+      flex-wrap: wrap;
+    }
+
+    .sponsor-new-choice {
+      display: inline-flex;
+      align-items: center;
+      gap: 9px;
+      padding: 11px 18px;
+      border-radius: 999px;
+      background: rgba(155, 216, 165, 0.18);
+      cursor: pointer;
+    }
+
+    .sponsor-new-choice input {
+      width: auto;
+      min-height: 0;
+      margin: 0;
+      accent-color: var(--green, #9bd8a5);
+    }
+
+    /* =========================================
+       AGREEMENT
+    ========================================= */
+
+    .sponsor-new-agreement {
+      display: flex;
+      align-items: flex-start;
+      gap: 12px;
+      line-height: 1.55;
+      cursor: pointer;
+    }
+
+    .sponsor-new-agreement input {
+      width: 18px;
+      height: 18px;
+      margin: 3px 0 0;
+      flex: 0 0 auto;
+      accent-color: var(--blue, #75c7df);
+    }
+
+    /* =========================================
+       BUTTON + NOTE
+    ========================================= */
+
+    .sponsor-new-submit {
+      width: auto;
+      min-width: 240px;
+      justify-self: center;
+      border: 0;
+      cursor: pointer;
+      font-family: 'Poppins', sans-serif;
+      font-size: 1rem;
+    }
+
+    .sponsor-new-note {
+      max-width: 560px;
+      margin: -4px auto 0;
+      text-align: center;
+      font-size: 0.9rem;
+      line-height: 1.55;
+      opacity: 0.72;
+    }
+
+    /* =========================================
+       FOOTER
+    ========================================= */
+
+    .sponsor-new-footer {
+      padding: 24px 20px 36px;
+      text-align: center;
+    }
+
+    .sponsor-new-footer p {
+      margin: 0;
+    }
+
+    /* =========================================
+       MOBILE
+    ========================================= */
+
+    @media (max-width: 700px) {
+      .sponsor-new-header {
+        padding: 22px 18px 8px;
+      }
+
+      .sponsor-new-nav-links {
+        gap: 14px 18px;
+      }
+
+      .sponsor-new-main {
+        padding: 36px 18px 65px;
+      }
+
+      .sponsor-new-intro {
+        margin-bottom: 28px;
+      }
+
+      .sponsor-new-title {
+        margin-bottom: 16px;
+        font-size: clamp(2.5rem, 13vw, 3.8rem);
+      }
+
+      .sponsor-new-intro-text {
+        font-size: 0.98rem;
+        line-height: 1.65;
+      }
+
+      .sponsor-new-card {
+        padding: 28px 20px;
+        border-radius: 24px;
+        border-top-width: 8px;
+      }
+
+      .sponsor-new-row {
+        grid-template-columns: 1fr;
+        gap: 21px;
+      }
+
+      .sponsor-new-choice-row {
+        flex-direction: column;
+      }
+
+      .sponsor-new-choice {
+        width: 100%;
+        border-radius: 16px;
+      }
+
+      .sponsor-new-submit {
+        width: 100%;
+        min-width: 0;
+      }
+    }
+
+    @media (max-width: 380px) {
+      .sponsor-new-main {
+        padding-left: 14px;
+        padding-right: 14px;
+      }
+
+      .sponsor-new-card {
+        padding: 24px 16px;
+      }
+    }
+  </style>
 </head>
 
-<body class="sponsor-page">
+<body class="sponsor-page-new">
+
   <div class="page-sparkles" aria-hidden="true">
     <span class="page-sparkle s1">✦</span>
     <span class="page-sparkle s2">✦</span>
@@ -23,59 +340,198 @@
     <span class="page-sparkle s8">✦</span>
   </div>
 
-  <header class="sponsor-header">
-    <nav class="nav">
-      <div class="nav-links">
+  <header class="sponsor-new-header">
+    <nav class="sponsor-new-nav">
+      <div class="sponsor-new-nav-links">
         <a href="index.html">Home</a>
         <a href="index.html#about">About</a>
         <a href="index.html#books">Books</a>
         <a href="index.html#events">Storytime</a>
         <a href="index.html#visit">Visit</a>
       </div>
-
-     
     </nav>
   </header>
 
- <main class="sponsor-main">
-  <div class="sponsor-container">
+  <main class="sponsor-new-main">
+    <div class="sponsor-new-container">
 
-    <section class="sponsor-intro">
-      <p class="section-label">Become Part of Our Story</p>
+      <section class="sponsor-new-intro">
+        <p class="sponsor-new-label">Become Part of Our Story</p>
 
-      <h1>Sponsor a Bookshelf</h1>
+        <h1 class="sponsor-new-title">Sponsor a Bookshelf</h1>
 
-      <p>
-        Celebrate a special little reader by sponsoring a bookshelf in their
-        name for just <strong>$25</strong>.
-      </p>
+        <p class="sponsor-new-intro-text">
+          Celebrate a special little reader by sponsoring a bookshelf in their
+          name for just <strong>$25</strong>.
+        </p>
 
-      <p>
-        Complete the form below, and we'll contact you with payment details and
-        confirmation of how the child's name will appear.
-      </p>
-    </section>
+        <p class="sponsor-new-intro-text">
+          Complete the form below, and we’ll contact you with payment details
+          and confirmation of how the child’s name will appear.
+        </p>
+      </section>
 
-    <section class="sponsor-form-card">
-      <form
-        action="https://formspree.io/f/mlgyqdkq"
-        method="POST"
-        class="sponsor-form"
-      >
+      <section class="sponsor-new-card">
+        <form
+          action="https://formspree.io/f/mlgyqdkq"
+          method="POST"
+          class="sponsor-new-form"
+        >
 
-        <!-- Everything inside your form stays exactly the same -->
+          <div class="sponsor-new-row">
+            <div class="sponsor-new-field">
+              <label for="guardian-name">Parent or Guardian Name</label>
 
-      </form>
-    </section>
+              <input
+                type="text"
+                id="guardian-name"
+                name="Parent or Guardian Name"
+                autocomplete="name"
+                required
+              />
+            </div>
 
-  </div>
-</main>
+            <div class="sponsor-new-field">
+              <label for="email">Email Address</label>
 
-  <footer class="footer">
+              <input
+                type="email"
+                id="email"
+                name="email"
+                autocomplete="email"
+                required
+              />
+            </div>
+          </div>
 
-    <p class="copyright">
+          <div class="sponsor-new-row">
+            <div class="sponsor-new-field">
+              <label for="phone">Phone Number</label>
+
+              <input
+                type="tel"
+                id="phone"
+                name="Phone Number"
+                autocomplete="tel"
+              />
+            </div>
+
+            <div class="sponsor-new-field">
+              <label for="child-name">Child’s Name</label>
+
+              <input
+                type="text"
+                id="child-name"
+                name="Child's Name"
+                required
+              />
+            </div>
+          </div>
+
+          <div class="sponsor-new-field">
+            <label for="display-name">
+              How should the child’s name appear?
+            </label>
+
+            <select
+              id="display-name"
+              name="Name Display Preference"
+              required
+            >
+              <option value="" disabled selected>Choose one</option>
+              <option value="First name only">First name only</option>
+              <option value="First and last name">First and last name</option>
+              <option value="First name and last initial">
+                First name and last initial
+              </option>
+            </select>
+          </div>
+
+          <fieldset class="sponsor-new-field">
+            <legend>Is this sponsorship a gift?</legend>
+
+            <div class="sponsor-new-choice-row">
+              <label class="sponsor-new-choice">
+                <input
+                  type="radio"
+                  name="Is This a Gift?"
+                  value="Yes"
+                  required
+                />
+                <span>Yes</span>
+              </label>
+
+              <label class="sponsor-new-choice">
+                <input
+                  type="radio"
+                  name="Is This a Gift?"
+                  value="No"
+                  required
+                />
+                <span>No</span>
+              </label>
+            </div>
+          </fieldset>
+
+          <div class="sponsor-new-field">
+            <label for="payment">Preferred Payment Method</label>
+
+            <select
+              id="payment"
+              name="Preferred Payment Method"
+              required
+            >
+              <option value="" disabled selected>Choose one</option>
+              <option value="Venmo">Venmo</option>
+              <option value="Cash in store">Cash in store</option>
+              <option value="Check">Check</option>
+              <option value="Please contact me">Please contact me</option>
+            </select>
+          </div>
+
+          <label class="sponsor-new-agreement">
+            <input
+              type="checkbox"
+              name="Agrees to $25 Sponsorship"
+              value="Yes"
+              required
+            />
+
+            <span>
+              I understand that sponsoring a bookshelf costs
+              <strong>$25</strong>.
+            </span>
+          </label>
+
+          <input
+            type="hidden"
+            name="_subject"
+            value="New Elle, Ro & Co. Bookshelf Sponsorship"
+          />
+
+          <button
+            type="submit"
+            class="btn primary sponsor-new-submit"
+          >
+            Submit Sponsorship
+          </button>
+
+          <p class="sponsor-new-note">
+            Submitting this form does not process payment. We’ll contact you
+            with the next steps.
+          </p>
+
+        </form>
+      </section>
+
+    </div>
+  </main>
+
+  <footer class="sponsor-new-footer">
+    <p>
       © 2026 Elle, Ro &amp; Co. • Explore ✦ Imagine ✦ Read
     </p>
   </footer>
+
 </body>
 </html>
