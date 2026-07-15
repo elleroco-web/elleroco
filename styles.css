@@ -145,6 +145,30 @@ a.location-link:active {
   text-decoration-color: #9bd8a5 !important;
 }
 
+/* CLICKABLE TEXT LINKS */
+a.location-link,
+a.location-link:link,
+a.location-link:visited {
+  display: inline;
+  color: #389bb7 !important;
+  font-weight: 700;
+  text-decoration-line: underline;
+  text-decoration-color: #75c7df !important;
+  text-decoration-thickness: 2px;
+  text-underline-offset: 4px;
+  overflow-wrap: anywhere;
+  transition:
+    color 0.25s ease,
+    text-decoration-color 0.25s ease;
+}
+
+a.location-link:hover,
+a.location-link:focus-visible,
+a.location-link:active {
+  color: #5fa76c !important;
+  text-decoration-color: #9bd8a5 !important;
+}
+
 /* LOGO */
 
 .logo-card {
