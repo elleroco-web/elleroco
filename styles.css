@@ -584,6 +584,61 @@ h1 {
   }
 }
 
+/* HOMEPAGE BOOKSHELF FEATURE */
+
+.bookshelf-feature {
+  background:
+    radial-gradient(circle at top left, rgba(117,199,223,0.18), transparent 34%),
+    radial-gradient(circle at bottom right, rgba(245,167,189,0.16), transparent 34%),
+    rgba(255,255,255,0.94);
+  border-top: 10px solid var(--blue);
+  border-radius: 42px;
+  box-shadow: var(--shadow);
+  margin-top: 44px;
+  position: relative;
+  overflow: hidden;
+}
+
+.bookshelf-feature > p:not(.section-label) {
+  max-width: 760px;
+}
+
+.dedication-details {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 22px;
+  margin-top: 48px;
+}
+
+.dedication-card {
+  background: var(--white);
+  border-radius: 28px;
+  padding: 32px 26px;
+  box-shadow: var(--shadow);
+  border: 1px solid rgba(0,0,0,0.04);
+}
+
+.dedication-card span {
+  display: inline-block;
+  margin-bottom: 16px;
+  font-size: 2.2rem;
+}
+
+.dedication-card h3 {
+  margin-bottom: 12px;
+  font-size: 1.55rem;
+  color: #389bb7;
+}
+
+.dedication-card p {
+  margin: 0;
+  font-size: 0.98rem;
+}
+
+.home-preview {
+  margin-top: 44px;
+}
+
 /* ==========================
    MOBILE
 ========================== */
