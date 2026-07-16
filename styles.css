@@ -675,6 +675,25 @@ h1 {
     font-size: 2rem;
   }
 
+    .dedication-details {
+  grid-template-columns: 1fr;
+  gap: 17px;
+  margin-top: 34px;
+}
+
+.dedication-card {
+  width: 100%;
+  max-width: 360px;
+  margin: 0 auto;
+  padding: 27px 22px;
+  border-radius: 24px;
+}
+
+.bookshelf-feature {
+  border-radius: 28px;
+  margin-top: 28px;
+}
+    
   /* NAVIGATION */
 
   .nav {
